@@ -196,6 +196,16 @@
 
             document.getElementById("help").innerText = result;
         }
+        function newGame() {
+            monsterLocation = Math.floor(Math.random() * 35);
+            fancyCoinLocations = Math.floor(Math.random() * 35);
+            console.log(monsterLocation);
+            console.log(fancyCoinLocations);
+            score=null;
+            locations=null;
+            document.getElementById("locations").innerText =`locations: 0`; 
+            document.getElementById("score").innerText = `score: 0`;
+        }
         
 </script>
 </body>
